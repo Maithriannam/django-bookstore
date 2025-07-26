@@ -1,0 +1,99 @@
+/* styles.css - Bookstore Styling with Dark Mode */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: background-color 0.4s, color 0.4s;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.navbar .form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top.fixed-img {
+  width: 180px;
+  height: 240px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #000 !important;
+}
+
+.dark-mode .btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode .btn-outline-danger {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.dark-mode .btn-outline-danger:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: #000 !important;
+}
+
+.dark-mode a,
+.dark-mode .btn {
+  color: white !important;
+}
+.dark-mode {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+
+.dark-mode .navbar {
+  background-color: #000 !important;
+}
+
+.dark-mode .btn {
+  color: white !important;
+}
+
