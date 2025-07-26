@@ -1,7 +1,6 @@
 # books/views.py
 from django.shortcuts import render, redirect
 from .models import Book
-
 def home(request):
     books = Book.objects.all()
     cart_items = request.session.get('cart', [])
@@ -31,3 +30,6 @@ def remove_from_cart(request, book_id):
         request.session['cart'] = cart
     return redirect('cart')
 
+def payment_success(request):
+    request.session['cart'] = []  # Optional: Clear cart after payment
+    return render(request, 'books/success.html')
